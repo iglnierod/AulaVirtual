@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Round");
+
+* {
+    padding: 3px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: currentColor;
+}
+
+body {
+    background-color: #1c2128;
+    color: #bfd4e9;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+}
+
+nav a span {
+    padding: 10px;
+    margin-left: 100px;
+    border-radius: 100px;
+}
+
+nav a span:hover {
+    background-color: #333c4a;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+}
+
+.date {
+    padding-top: 15px;
+    padding-bottom: 7px;
+}
+
+.item {
+    display: flex;
+    gap: 15px;
+    min-width: 400px;
+    max-width: 400px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    min-height: 105px;
+    max-height: 105px;
+    padding: 15px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.item img {
+    aspect-ratio: 1/1;
+    width: 80px;
+    height: 80px;
+}
+
+.item .description {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #99adc2;
+}
