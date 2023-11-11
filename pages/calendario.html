@@ -4,83 +4,87 @@
 <head>
     <link rel="icon" href="img/ico.webp">
     <link rel="stylesheet" href="../styles/calendario.css">
+    <script defer src="../scritps/calendar.js"></script>
     <title>Calendario/DAM2</title>
 </head>
 
 <body>
-    <nav>
-        <a href="../index.html">
-            <span class="material-icons-round">
-                arrow_back
-            </span>
-        </a>
-    </nav>
-    <main>
-        <h2 class="date">15 de Diciembre</h2>
-        <section class="item">
-            <img src="../img/procesos.png" alt="INT">
-            <section class="info">
-                <h3 class="title">Procesos y hilos</h3>
-                <h3 class="description">Examen de la unidad 1,2</h3>
-            </section>
-        </section>
-        <h2 class="date">12 de Diciembre</h2>
-        <section class="item">
-            <img src="../img/java.png" alt="INT">
-            <section class="info">
-                <h3 class="title">Examen UD3</h3>
-                <h3 class="description">Examen de la unidad 3</h3>
-            </section>
-        </section>
-        <h2 class="date">1 de Diciembre</h2>
-        <section class="item">
-            <img src="../img/java.png" alt="INT">
-            <section class="info">
-                <h3 class="title">Examen UD2</h3>
-                <h3 class="description">Examen de la unidad 2</h3>
-            </section>
-        </section>
-        <h2 class="date">28 de Noviembre</h2>
-        <section class="item">
-            <img src="../img/database.png" alt="BBDD">
-            <section class="info">
-                <h3 class="title">Examen UD1</h3>
-                <h3 class="description">Examen de la unidad 1</h3>
-            </section>
-        </section>
-        <h2 class="date">27 de Noviembre</h2>
-        <section class="item">
-            <img src="../img/database.png" alt="BBDD">
-            <section class="info">
-                <h3 class="title">Examen UD1</h3>
-                <h3 class="description">Examen de la unidad 1</h3>
-            </section>
-        </section>
-        <h2 class="date">8 de Noviembre</h2>
-        <section class="item">
-            <img src="../img/erp.png" alt="EIE">
-            <section class="info">
-                <h3 class="title">Examen UD1</h3>
-                <h3 class="description">Examen de la unidad 1</h3>
-            </section>
-        </section>
-        <h2 class="date">3 de Noviembre</h2>
-        <section class="item">
-            <img src="../img/java.png" alt="INT">
-            <section class="info">
-                <h3 class="title">Examen UD1: Confección de interfaces de usuario</h3>
-                <h3 class="description">Examen de la unidad 1</h3>
-            </section>
-        </section>
-        <h2 class="date">30 de Octubre</h2>
-        <section class="item">
-            <img src="../img/empresa.png" alt="EIE">
-            <section class="info">
-                <h3 class="title">Examen UD1</h3>
-                <h3 class="description">Examen de la unidad 1. Nota: 7.41</h3>
-            </section>
-        </section>
-    </main>
+
+    <div class="container">
+        <nav>
+            <a href="../index.html">
+                <span 
+                class="material-icons-round"
+                style="color: white;padding: 10px;
+                       margin: 5px;">
+                    arrow_back
+                </span>
+            </a>
+        </nav>
+        <div class="left">
+            <div class="calendar">
+                <div class="month">
+                    <i class="fas fa-angle-left prev"></i>
+                    <div class="date">december 2015</div>
+                    <i class="fas fa-angle-right next"></i>
+                </div>
+                <div class="weekdays">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div class="days"></div>
+                <div class="goto-today">
+                    <div class="goto">
+                        <input type="text" placeholder="mm/yyyy" class="date-input" />
+                        <button class="goto-btn">Go</button>
+                    </div>
+                    <button class="today-btn">Today</button>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="today-date">
+                <div class="event-day">wed</div>
+                <div class="event-date">12th december 2022</div>
+            </div>
+            <div class="events"></div>
+            <div class="add-event-wrapper">
+                <div class="add-event-header">
+                    <div class="title">Add Event</div>
+                    <i class="fas fa-times close"></i>
+                </div>
+                <div class="add-event-body">
+                    <div class="add-event-input">
+                        <input type="text" placeholder="Event Name" class="event-name" />
+                    </div>
+                    <div class="add-event-input">
+                        <input type="text" placeholder="Event Time From" class="event-time-from" />
+                    </div>
+                    <div class="add-event-input">
+                        <input type="text" placeholder="Event Time To" class="event-time-to" />
+                    </div>
+                </div>
+                <div class="add-event-footer">
+                    <button class="add-event-btn">Add Event</button>
+                </div>
+            </div>
+        </div>
+        <button class="add-event">
+            <i class="fas fa-plus"></i>
+        </button>
+    </div>
+    <!-- 
+    <div class="credits">
+        <p>
+            Watch Tutorial on Youtube
+            <a href="https://youtu.be/6EVgmpm4z5U" target="_blank">Open Source Coding</a>
+        </p>
+    </div> -->
 </body>
 
 </html>
